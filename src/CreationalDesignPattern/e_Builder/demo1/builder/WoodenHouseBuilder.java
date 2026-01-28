@@ -5,9 +5,9 @@ import CreationalDesignPattern.e_Builder.demo1.product.*;
 public class WoodenHouseBuilder implements HouseBuilder {
     private House house;
 
-    public WoodenHouseBuilder(House house) {
-        System.out.println("WoodenHouseBuilder:1-param constructor");
-        this.house = house;
+    public WoodenHouseBuilder() {
+        System.out.println("WoodenHouseBuilder:0-param constructor");
+        house = new House();
     }
 
     @Override

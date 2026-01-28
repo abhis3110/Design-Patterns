@@ -24,6 +24,8 @@ public class House {
         this.interior = interior;
     }
 
-    // get house object
-
+    @Override
+    public String toString() {
+        return "House[basement=" + basement + ", structure=" + structure + ", roofing=" + roofing + ", interior=" + interior + "]";
+    }
 }

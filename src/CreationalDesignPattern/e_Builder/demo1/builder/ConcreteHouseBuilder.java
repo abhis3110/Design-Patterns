@@ -5,9 +5,9 @@ import CreationalDesignPattern.e_Builder.demo1.product.*;
 public class ConcreteHouseBuilder implements HouseBuilder {
     private House house;
 
-    public ConcreteHouseBuilder(House house) {
-        System.out.println("ConcreteHouseBuilder:1-param constructor");
-        this.house = house;
+    public ConcreteHouseBuilder() {
+        System.out.println("ConcreteHouseBuilder:0-param constructor");
+        house = new House();
     }
 
     @Override

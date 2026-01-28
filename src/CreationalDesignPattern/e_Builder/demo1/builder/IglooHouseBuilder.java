@@ -5,9 +5,9 @@ import CreationalDesignPattern.e_Builder.demo1.product.*;
 public class IglooHouseBuilder implements HouseBuilder {
     private House house;
 
-    public IglooHouseBuilder(House house) {
-        System.out.println("IglooHouseBuilder:1-param constructor");
-        this.house = house;
+    public IglooHouseBuilder() {
+        System.out.println("IglooHouseBuilder:0-param constructor");
+        house = new House();
     }
 
     @Override
@@ -18,7 +18,7 @@ public class IglooHouseBuilder implements HouseBuilder {
 
     @Override
     public void buildStructure() {
-        System.out.println("IglooHouseBuilder.buildBasement()");
+        System.out.println("IglooHouseBuilder.buildStructure()");
         house.setStructure(new IceStructure());
     }
 
